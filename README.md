@@ -24,9 +24,9 @@ Folders and a brief description:
  - `author_type` - All of the author role classification of CaringBridge users and sites.
  - `build_network` - Exploratory work to build the interaction network.  Generally discarded in favor of other approaches.
  - `data_pulling` - Scripts for data processing and management, but also notebooks for survival analysis, as seen in Ruyuan Wan's CSCW'20 poster. For building the network data, `FilterAndMergeExtractedInteractions` does all the relevant merging, and includes some additional visualizations of users interaction tendencies. Subfolder `sa_poster_figures` has figures for the survival analysis poster (they probably should have been put in the top-level figures directory).
- - `data_selection` - TODO
- - `dyad_growth` - TODO
+ - `data_selection` - Core notebooks for selecting valid authors, esp. `CandidateDataSelection-New`.
+ - `dyad_growth` - A lot of the interaction network stuff here, as well as the most important notebook in the repo: `UserUserDyadDistributions-Demonstration`. This notebook should not be here, but it includes a lot of stuff, including some RQ2 models.
  - `figures` - generic output directory for many of the figures in the paper, in PDF format.
- - `geographic_analysis` - TODO
- - `visualization` - TODO
+ - `geographic_analysis` - Code that generates US-state-assignments for valid authors, by using the recorded IP addresses on guestbooks and journal updates.
+ - `visualization` - Author tenure analysis and figure in `AuthorTenure`. I think basically nothing else is relevant in this folder. (One interesting thing: our attempts to do "session"-centric analysis on CaringBridge basically failed; inter-activity times don't show clear evidence of sessions. Many (most?) authors come to CaringBridge on a fairly fixed schedule, which either suggests a lack of responsiveness to notifications or responding exclusively off-platform e.g. reading guestbooks via email.) Also a script to generate a pointless video breaking down users by their types of interactions on CaringBridge: https://youtu.be/tmRRubHZqDo
 
