@@ -21,7 +21,7 @@ Some code makes use of functions or utilities in another repository: https://git
 
 Folders and a brief description:
  - `author_initiations` - All of the initiations code, including all (?) of the models for RQ1. Includes scripts for producing the features expected by the mlogit models.
- - `author_type` - All of the author role classification of CaringBridge users and sites.
+ - `author_type` - All of the author role classification of CaringBridge users and sites. Notably, the `AuthorTypeClassification-New` notebook contains an implementation of [Black Box Shift Correction](https://arxiv.org/abs/1802.03916) (as `bbsc_clf` in the sklearn classification pipeline).
  - `build_network` - Exploratory work to build the interaction network.  Generally discarded in favor of other approaches.
  - `data_pulling` - Scripts for data processing and management, but also notebooks for survival analysis, as seen in Ruyuan Wan's CSCW'20 poster. For building the network data, `FilterAndMergeExtractedInteractions` does all the relevant merging, and includes some additional visualizations of users interaction tendencies. Subfolder `sa_poster_figures` has figures for the survival analysis poster (they probably should have been put in the top-level figures directory).
  - `data_selection` - Core notebooks for selecting valid authors, esp. `CandidateDataSelection-New`.
